@@ -19,10 +19,10 @@ export default function Login() {
     // Simulate API call with timeout
     setTimeout(() => {
       // Check hardcoded credentials
-      if (username === 'adeeb' && password === '123') {
+      if (username === 'bond' && password === 'metal') {
         // Set auth in localStorage for persistence
         localStorage.setItem('isAuthenticated', 'true');
-        toast.success('Successfully logged in! Welcome back, Adeeb.');
+        toast.success('Successfully logged in! Welcome back, Admin.');
         navigate('/dashboard');
       } else {
         setError('Invalid username or password');
